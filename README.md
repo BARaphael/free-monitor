@@ -1,6 +1,6 @@
 # Free Monitor
 ## Introduction
-This is a python library to monitor any data on web. In upcoming release only one data can be monitored with only a number displayed. More powerful functions are coming soon.
+This is a python library to monitor any data on web. In current release only one data can be monitored with only a number displayed. More powerful functions are coming soon.
 ## Usage
 ### Initiate
 ```
