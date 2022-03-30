@@ -27,8 +27,8 @@ def linkConfigFile(filename):
 def static_dir(path):
     return send_from_directory("./free-monitor/dist", path)
 
-def run():
-    app.run(host="0.0.0.0",debug=True)
+def run(debug=False):
+    app.run(host="0.0.0.0",debug=debug)
 
 if __name__ == "__main__":
     ticks = 0

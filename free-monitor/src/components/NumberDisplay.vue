@@ -56,7 +56,6 @@ export default {
             toVModel:{//if properties below are not wrapped in an object, v-model will not work after build 
                 inputAddressedValueDebug:0
             }
-            
         }
     },
     methods:{
@@ -78,20 +77,16 @@ export default {
                     console.log(this.inputDataId+"NumberDisplay cookie is saved:");
                     console.log(this.settings);
                 }
-
-                
                 this.cookies.set(this.inputDataId+"NumberDisplay",this.settings)
             }
         },
         loadSettingsFromCookieIfExists(){
             if(this.cookies.isKey(this.inputDataId+"NumberDisplay")){
-                
                 var cookieSetting = this.cookies.get(this.inputDataId+"NumberDisplay")
                 if(this.isDebug){
                     console.log(this.inputDataId+"NumberDisplay cookie is loaded")
                     console.log(cookieSetting);
                 }
-
                 this.applySettings(cookieSetting)
             }
         },
@@ -105,7 +100,6 @@ export default {
                 }
             }
         },
-        
     },
     beforeCreate(){
         const {cookies} = useCookies();

@@ -8,7 +8,7 @@ export default {
   data() {
       return {
         globalSettings:{//if properties below are not wrapped in an object, v-model will not work after build 
-          isDebug_: true,
+          isDebug_: false,
           allowCookies:true,
         },
         

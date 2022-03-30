@@ -2,7 +2,7 @@
 #%%
 
 import psutil
-import labPanel
+import free_monitor as fm
 # refer to https://stackoverflow.com/questions/276052/how-to-get-current-cpu-and-ram-usage-in-python
 
 def getData():
@@ -10,6 +10,6 @@ def getData():
     print(p)
     return str(p)
 #%%
-labPanel.generateWebPage(getData)
-labPanel.linkConfigFile("./cpu_percent.json")
-labPanel.run()
+fm.generateWebPage(getData)
+fm.linkConfigFile("./cpu_percent.json")
+fm.run()
